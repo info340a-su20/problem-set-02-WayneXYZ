@@ -1,36 +1,37 @@
 circle {
     fill: #5f5f5f;
 }
-
 path {
     stroke: #5f5f5f;
     stroke-width: 8px;
 }
-
 circle.small {
-    fill: white !important;
+    fill:white
 }
 
-g > circle, g > rect{
-    fill: #c0c0c0 !important;
+.contained circle.small {
+    fill:#573d29
+}
+rect {
+    opacity: 0;
+}
+
+.contained circle, .contained rect {
+    fill:#c0c0c0;
     stroke: none;
     opacity: 1;
 }
 
-/* 6 */
 #interactive {
     fill: #c0c0c0;
     stroke: #bd250d;
     stroke-width: 4px;
 }
+
 #interactive:hover {
     fill: #bd250d;
 }
 
-rect {
-    opacity: 0;
-}
-
-path.nine {
-    stroke: none !important;
+path:last-of-type {
+    stroke: none;
 }
